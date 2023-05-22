@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Tribute page</title>
+    <link href="final.css" rel="stylesheet" type="text/css">
+    <style>
+        .column {
+            float: left;
+            width: 50%;
+            }
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+            }
+        .bg{
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            margin: 0%;
+        }
+        .zoom {
+    padding:0;
+    transition: transform .2s;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 30px;
+    }
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.2);
+} 
+.container
+        {
+           height: auto; 
+           width: auto;
+           display: flex;
+          
+        }
+        .container div{
+            
+            height: 300px;
+            width: 350px;
+            margin: 50px;
+            padding: 4px;;
+            display: flex;
+            font-size: small;
+        } 
+.ff
+{
+    background: black;
+            width:100%;
+            height:100%;
+            padding:10px;
+            display: flex;
+            color: white;
+            border: 1px solid black;
+            margin-top: 0%;
+}
+
+.slideshow-container {
+      position: relative;
+      width: 500px;
+    height: 600px;
+      /* margin-left: 400px; */
+      justify-content: center;
+    }
+    
+    .mySlides {
+      display: none;
+    }
+    
+    .slideshow-image {
+      width: 210vh;
+      height: 590px;
+      left: 0px;
+      border-radius: 30px;
+    }
+    </style>
+</head>
+<body>
+<div class="hero" > 
+    <nav>
+    <h2 class="logo">The Tribute<span>Pages</span> </h2>
+        <ul>
+            <li><a href="#tribute" >Tribute Page</a></li>
+                <li><a href="#about" >Contact Us</a></li>
+                <li><a href="#edu" >About Us</a></li>
+                <li><a href="#other">Other Aspects</a></li>
+        </ul>
+    </nav>
+    <div>
+        <hr color="#f9004d" size="7px">
+
+        <div class="bg">
+            <div id="home">
+                <div class="ff">
+                    <div class="slideshow-container">
+                        <div class="mySlides">
+                          <img class="slideshow-image" src="https://th.bing.com/th/id/OIP.l2D8YqM9rzm8HODR5-Id1AHaEo?pid=ImgDet&rs=1" alt="Image 1">
+                        </div>
+                        <div class="mySlides">
+                          <img class="slideshow-image" src="https://technicianjourney.files.wordpress.com/2019/11/marie_curie_quote.png" alt="Image 2">
+                        </div>
+                      
+                        <div class="mySlides">
+                          <img class="slideshow-image" src="https://th.bing.com/th/id/R.cca00fd02bbe02742e6f53fcfe3dc928?rik=SqIKRj6S0cqo0A&riu=http%3a%2f%2fstatusmind.
+                          com%2fimages%2fresizeforfb.php%3fsrc%3dhttp%3a%2f%2fstatusmind.com%2fimages%2f2013%2f11%2fWise-Facebook-Status-26688-statusmind.com.
+                          jpg%26h%3d314%26w%3d600%26zc%3d0%26q%3d100&ehk=1Q1cYYv4ErFL4Me8q2uuWcho1y09Y3TKaFvSIft2nr4%3d&risl=&pid=
+                          ImgRaw&r=0" alt="Image 3">
+                        </div>
+                        <div class="mySlides">
+                            <img class="slideshow-image" src="https://th.bing.com/th/id/OIP.yiCQLHbSuxJXurhAVrhUaQHaDf?pid=ImgDet&rs=1" alt="Image 4">
+                          </div>
+                      </div>
+              </div>
+              </div>
+              </div>
+                      <script>
+                        var slideIndex = 0;
+                        showSlides();
+                      
+                        function showSlides() {
+                          var i;
+                          var slides = document.getElementsByClassName("mySlides");
+                          for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                          }
+                          slideIndex++;
+                          if (slideIndex > slides.length) {
+                            slideIndex = 1;
+                          }
+                          slides[slideIndex - 1].style.display = "block";
+                          setTimeout(showSlides, 2000); // Change slide every 2 seconds
+                        }
+                      </script>
+
+<hr color="white">
+<section id="tribute" class="cardview">
+    <div class="features-1" id="tribute">
+        <div class="title-1">
+            <h2>
+                Tribute Pages <span>of Legends</span>
+            </h2>
+            <br>
+            <br>
+        </div>
+        <a href="Einstein/einstein.html" style="color:black;">
+            <div class="box-1">
+                <div class="card-1">
+                    <h5>Albert Einstein</h5>
+                    <div class="pra-1">
+                        <img width="200px" src="Albert-Einstein-PNG-HD.png" class="albert" >
+                    </div>
+                </div>
+        </a>
+            <a href="Rosalind/rosalind.html" style="color: black;">
+                <div class="card-1">
+                    <h5>Rosalind Franklin</h5>
+                    <div class="pra-1">
+                       <img src="roasa-no-back.png" class="albert">
+                    </div>
+                </div>
+            </a>
+            <a href="Newton/newton.html" style="color: black;"><div class="card-1">
+                <h5>Issac Newton</h5>
+                <div class="pra-1">
+                    <img src="issac.png" class="newton">
+                </div>
+            </div></a>
+            <a href="Marie/try.html" style="color:black;">
+                <div class="card-1">
+                        <h5>Marie Curie</h5>
+                        <div class="pra-1">
+                            <img src="ai-generated-7830678-removebg-preview.png" width="200px" alt="">
+                    </div>
+                </div>
+            </a>
+    </div>
+</section>
+<hr color="White">
+<section class="cardview">
+    <div class="features" id="edu">
+        <div class="title">
+        <h2>
+            What will you<span> be able to do?</span>
+        </h2>
+        </div>
+    <div class="box">
+        <div class="card">
+            <div class="pra">
+                <p>
+                   <span> Biography<br></span> A tribute page often includes a detailed biography of the person being honored. It provides an overview of their life, achievements, and contributions, allowing visitors to gain a better understanding of their significance.
+                </p>
+                <p style="text-align:center;">
+                </p>
+                
+            </div>
+        </div>
+        <div class="card">
+            <div class="pra">
+                <p>
+                   <span> Charitable contributions<br></span>
+                     In some cases, tribute pages may include information about charitable causes or organizations that were important to the person being remembered. This provides an opportunity for visitors to make donations or contribute to causes that were dear to the individual.
+                </p>
+                <p style="text-align:center;">
+                </p>
+        
+            </div>
+        </div>
+        <div class="card">
+            <div class="pra">
+                <p>
+                   <span>Achievements and milestones<br></span> A tribute page may outline the notable achievements, milestones, and significant moments in the life of the person being honored. This helps to showcase their accomplishments and the impact they had on others.              
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<hr color="White">
+<section>
+    <div class="sub-footer" id="about">
+        <p>
+        Contact <span>Us</span></p>
+        </p>
+        <p class="sf-p">
+            <span> &#128222 </span> 7830915419
+            <br>
+            <span> &#128231 </span>
+           rayinis497@tributepages.com
+        </p>
+        <p><span>Rate </span>Us</p>
+        <div class="rate">
+            <input type="radio" id="star5" name="rate" value="5" />
+            <label for="star5" title="text">5 stars</label>
+            <input type="radio" id="star4" name="rate" value="4" />
+            <label for="star4" title="text">4 stars</label>
+            <input type="radio" id="star3" name="rate" value="3" />
+            <label for="star3" title="text">3 stars</label>
+            <input type="radio" id="star2" name="rate" value="2" />
+            <label for="star2" title="text">2 stars</label>
+            <input type="radio" id="star1" name="rate" value="1" />
+            <label for="star1" title="text">1 star</label>
+          </div>
+    </div>
+</section>
+<hr color="White">
+<footer>
+    <p>
+        Made with <span>&hearts;</span> by <span>Akriti , Akira Singh, Akhil Kumar, Akriti Patial </span>
+    </p>
+</footer>
+</body>
+
+    
